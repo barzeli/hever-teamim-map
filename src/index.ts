@@ -51,8 +51,5 @@ const kmlObject: jsontoxml.XmlElement = {
   },
 };
 
-const xml = jsontoxml.toXML(kmlObject, {
-  header: true,
-  indent: "  ",
-});
+const xml = jsontoxml.toXML(kmlObject, { header: true, indent: "  " });
 await writeFile("./places.kml", xml);
