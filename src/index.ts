@@ -1,7 +1,7 @@
 import jsontoxml from "jstoxml";
 import { writeFile } from "fs/promises";
 
-export interface PlaceResponse {
+interface PlaceResponse {
   img: string;
   name: string;
   desc: string;
@@ -23,7 +23,7 @@ export interface PlaceResponse {
   longitude: string;
 }
 
-export interface APIResponse {
+interface APIResponse {
   branch: PlaceResponse[];
 }
 
