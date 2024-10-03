@@ -41,10 +41,7 @@ const kmlObject: jsontoxml.XmlElement = {
       ...response.branch.map((place) => ({
         Placemark: {
           name: place.name,
-          description: `${place.desc}
-${place.category} - ${place.type}
-${place.hours}
-${place.address}, ${place.city}`,
+          description: `${place.desc}\n${place.category} - ${place.type}\n${place.hours}\n${place.address}, ${place.city}`,
           Point: {
             coordinates: `${place.longitude},${place.latitude},0`,
           },
